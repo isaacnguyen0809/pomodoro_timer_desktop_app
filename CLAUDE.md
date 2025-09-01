@@ -11,7 +11,7 @@ This is a Tauri-based desktop pomodoro timer application with a React frontend. 
 - **Communication**: Tauri commands for frontend-backend communication
 
 ### Key Files
-- `src/App.jsx` - Main React component
+- `src/App.tsx` - Main React component (TypeScript)
 - `src-tauri/src/lib.rs` - Tauri backend with command handlers
 - `src-tauri/src/main.rs` - Application entry point
 - `src-tauri/tauri.conf.json` - Tauri configuration
@@ -46,6 +46,8 @@ Current commands:
 - `greet(name: &str)` - Example greeting command
 
 ## Configuration Notes
-- Tauri runs on fixed port 1420 in development
+- Tauri runs on fixed port 1420 in development (HMR on port 1421)
 - Window size: 800x600 pixels
 - Application identifier: `com.isaacnguyen.pomodoro_timer`
+- TypeScript is used throughout the frontend with React 19
+- Rust library name: `pomodoro_timer_lib` (see Cargo.toml)
